@@ -1,0 +1,28 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+accueil:
+  path: /accueil
+  controller: App\Controller\HomeController::bonjour
+
+contract_list:
+    path: /utilisateurs
+    controller: App\Controller\UtilisateurListController::listUtilisateurs
+
+api_profil:
+    path: /api/profil
+    controller: 'App\Controller\Api\ProfilController::getProfil'
+    methods: ['GET']
+
+chiffre_affaire_index:
+    path: /chiffre_affaire
+    controller: App\Controller\ChiffreAffaireController::index
+
+chiffre_affaire_departement_index:
+    path: /chiffre_affaire_departement
+    controller: App\Controller\ChiffreAffaireDepartementController::index
+
+

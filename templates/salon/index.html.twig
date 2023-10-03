@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Profil du Salon Beautiful!{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1 style="color: blue; font-weight: bold; text-decoration: underline;">Profil du Salon Beautiful:</h1>
+    <div style="background-color: #ffc0cb; padding: 10px;">
+        <p><strong>Nom du salon :</strong> {{ salon.nom }}</p>
+        <p><strong>Adresse :</strong> {{ salon.adresse }}</p>
+        <p><strong>Date d'ouverture :</strong> {{ salon.dateOuverture|date('d/m/Y') }}</p>
+        <p><strong>Nombre d'employés :</strong> {{ salon.employes }}</p>
+        <p><strong>Nom du gérant :</strong> {{ salon.nomGerant }}</p>
+        <p><strong>Prénom du gérant :</strong> {{ salon.prenomGerant }}</p>
+        
+        <!-- Ajoutez d'autres champs ici -->
+        
+        <!-- Ajoutez une petite image à droite -->
+        <img src="{{ asset('assets/images/salonB.jpg') }}" alt="Le salon Beautiful" style="float: top; width: 300px;">
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le salon Beautiful!{% endblock %}
+
+{% block body %}
+<h1 style="color: blue">Moyenne et somme des CA par régions</h1>
+<style>
+    th, td {
+        padding: 20px; /* Ajoutez la valeur de marge que vous souhaitez ici */
+    }
+</style>
+<table>
+    <thead>
+        <tr>
+            <th>Région</th>
+            <th>Total CA</th>
+            <th>Moyenne CA</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for region, totalCA in totalCAByRegion %}
+            <tr>
+                <td>{{ region }}</td>
+                <td>{{ totalCA }}</td>
+                <td>{{ averageCAByRegion[region] }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
