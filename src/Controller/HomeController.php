@@ -1,13 +1,16 @@
 <?php
 
-nameSpace App\Controller;
+namespace App\Controller;
 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
-// Création de la page d'accueil, avec une méthode et son retour
-class HomeController {
-    public function bonjour() 
+class HomeController extends AbstractController
+{
+    #[Route('/accueil', name: 'accueil')]
+    public function index(): Response
     {
-        return new Response("Bienvenue sur l'application de Salon B");
+        return $this->render('home.html.twig');
     }
 }

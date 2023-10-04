@@ -6,7 +6,7 @@ controllers:
 
 accueil:
   path: /accueil
-  controller: App\Controller\HomeController::bonjour
+  controller: App\Controller\HomeController::index
 
 contract_list:
     path: /utilisateurs
@@ -25,4 +25,11 @@ chiffre_affaire_departement_index:
     path: /chiffre_affaire_departement
     controller: App\Controller\ChiffreAffaireDepartementController::index
 
+login:
+    path: /api/login
+    controller: App\Controller\AuthController::login
+    methods: [POST]    
 
+inscription_succes:
+    path: '/inscription/success' # Le chemin de votre route
+    controller: 'App\Controller\UtilisateurController::inscriptionSucces' # Le contrôleur et l'action associés à cette route

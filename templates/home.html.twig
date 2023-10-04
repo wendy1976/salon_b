@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil du Salon Beautiful!{% endblock %}
+
+{% block body %}
+<style>
+    body {
+        background-color: #ffc0cb;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        margin: 0; /* Supprime la marge par défaut du corps */
+        padding: 0; /* Supprime le rembourrage par défaut du corps */
+    }
+    .content {
+        text-align: center;
+        padding: 100px;
+    }
+    img {
+        max-width: 100%;
+    }
+    h1 {
+        margin-bottom: 50px; /* Ajoute de l'espace sous le titre */
+        color: blue;
+    }
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+</style>
+<div class="content">
+    <h1>Bienvenue sur l'application du Salon BEAUTIFUL</h1>
+    <img src="{{ asset('assets/images/salonB.jpg') }}" alt="Le salon Beautiful" style="width: 300px;">
+    <ul>
+        <li><a href="{{ path('admin') }}">Lien vers le service d'administration</a></li>
+        <li><a href="{{ path('direction') }}">Lien vers l'espace personnel de la direction</a></li>
+        <li><a href="{{ path('formutilisateur') }}">Lien vers le formulaire d'inscription</a></li>
+        <!-- Ajoutez d'autres liens vers vos pages ici -->
+    </ul>
+</div>
+{% endblock %}

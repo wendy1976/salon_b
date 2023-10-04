@@ -27,6 +27,11 @@ class Utilisateur
     #[ORM\Column(length: 255)]
     private ?string $password = null;
 
+    // Ajout la propriété pour l'email de confirmation
+    #[ORM\Column(length: 255)]
+    private ?string $emailConfirmation = null;
+
+
     public function getId(): ?int
     {
         return $this->id;
@@ -80,6 +85,17 @@ class Utilisateur
         return $this;
     }
 
+    public function getEmailConfirmation(): ?string
+    {
+        return $this->emailConfirmation;
+    }
+
+    public function setEmailConfirmation(string $emailConfirmation): self
+    {
+        $this->emailConfirmation = $emailConfirmation;
+
+        return $this;
+    }
     
     // Méthodes requises par l'interface UserInterface
 
