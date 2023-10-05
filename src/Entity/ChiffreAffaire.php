@@ -1,5 +1,5 @@
 <?php
-
+// Entité des chiffres d'affaires mensuels du salon Beautiful
 namespace App\Entity;
 
 use App\Repository\ChiffreAffaireRepository;

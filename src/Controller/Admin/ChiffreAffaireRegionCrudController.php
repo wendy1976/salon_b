@@ -1,5 +1,5 @@
 <?php
-
+# Controlleur crud pour afficher les chiffres d'affaires mensuels par régions
 namespace App\Controller\Admin;
 
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
@@ -20,7 +20,7 @@ class ChiffreAffaireRegionCrudController extends AbstractCrudController
             ->setEntityLabelInSingular('Le chiffre d\'affaire par région')
             //->setDateFormat('d/m/Y', 'fr_FR')
             //->setTimeFormat('...')
-            ->setPageTitle('index','Salon Beautiful - Les chiffres d\'affaires par régions 2023')
+            ->setPageTitle('index','Salon Beautiful - Les chiffres d\'affaires par région 2023')
             
             // ...
         ;

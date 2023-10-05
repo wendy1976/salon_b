@@ -1,5 +1,5 @@
 <?php
-
+//Controleur pour afficher le profil du salon beautiful
 
 namespace App\Controller;
 

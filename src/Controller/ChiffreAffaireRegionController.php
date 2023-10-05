@@ -28,5 +28,5 @@ class ChiffreAffaireRegionController extends AbstractController
             'averageCAByRegion' => $averageCAByRegion,
         ]);
         // ... retourner une réponse appropriée ou afficher les résultats sur votre interface
-    } 
+    }
 }

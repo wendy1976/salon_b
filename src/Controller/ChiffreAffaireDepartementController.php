@@ -28,5 +28,5 @@ class ChiffreAffaireDepartementController extends AbstractController
             'averageCAByDepartement' => $averageCAByDepartement,
         ]);
         // ... retourner une réponse appropriée ou afficher les résultats sur votre interface
-    } 
+    }
 }

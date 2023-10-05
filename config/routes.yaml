@@ -3,7 +3,7 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
-
+#Création de mes routes et des controleurs associés
 accueil:
   path: /accueil
   controller: App\Controller\HomeController::index
@@ -31,5 +31,5 @@ login:
     methods: [POST]    
 
 inscription_succes:
-    path: '/inscription/success' # Le chemin de votre route
+    path: '/inscription/success' # Le chemin de ma route pour le message "inscription réusssie"
     controller: 'App\Controller\UtilisateurController::inscriptionSucces' # Le contrôleur et l'action associés à cette route

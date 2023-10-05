@@ -13,7 +13,7 @@ class ChiffreAffaireController extends AbstractController
     #[Route('/chiffre_affaire', name: 'chiffre_affaire_index')]
     public function index(ChiffreAffaireRepository $chiffreAffaireRepository): Response
     {
-        // Obtenez les chiffres d'affaires depuis votre modèle (remplacez cette ligne par votre logique)
+        // Obtenez les chiffres d'affaires depuis votre modèle
         $chiffresAffaire = $chiffreAffaireRepository->findAll();
 
         // Calculez la moyenne et la somme

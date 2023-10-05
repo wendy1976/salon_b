@@ -1,5 +1,5 @@
 <?php
-
+// Entité du formulaire d'inscription
 namespace App\Form;
 
 use App\Entity\Utilisateur;

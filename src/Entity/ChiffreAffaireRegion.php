@@ -1,5 +1,5 @@
 <?php
-
+// Entité des chiffres d'affaires mensuels de toutes les régions de France
 namespace App\Entity;
 
 use App\Repository\ChiffreAffaireRegionRepository;

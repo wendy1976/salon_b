@@ -1,5 +1,5 @@
 <?php
-
+# Controlleur crud pour afficher les chiffres d'affaires mensuels par départements
 namespace App\Controller\Admin;
 
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
@@ -20,7 +20,7 @@ class ChiffreAffaireDepartementCrudController extends AbstractCrudController
             ->setEntityLabelInSingular('Le chiffre d\'affaire par département')
             //->setDateFormat('d/m/Y', 'fr_FR')
             //->setTimeFormat('...')
-            ->setPageTitle('index','Salon Beautiful - Les chiffres d\'affaires par départements 2023')
+            ->setPageTitle('index','Salon Beautiful - Les chiffres d\'affaires par département 2023')
             
             // ...
         ;

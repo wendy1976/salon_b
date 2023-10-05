@@ -9,7 +9,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
 use Lexik\Bundle\JWTAuthenticationBundle\Services\JWTTokenManagerInterface;
 
 class AuthController extends AbstractController
-{ 
+{
     private $jwtManager;
 
     public function __construct(JWTTokenManagerInterface $jwtManager)

@@ -14,7 +14,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-//Création de l'interface du tableau de bord
+//Création de l'interface de l'espace personnel de la direction
 class DashboardDirectionController extends AbstractDashboardController
 {
     #[Route('/direction', name: 'direction')]
@@ -45,7 +45,7 @@ class DashboardDirectionController extends AbstractDashboardController
             ->setTitle('Salon BEAUTIFUL - Direction')
             ->renderContentMaximized();
     }
-
+    # Toutes les fonctions, liens, icones etc de l'espca personnel de la direction
     public function configureMenuItems(): iterable
     {
         yield MenuItem::linkToDashboard('Accueil', 'fa fa-home');

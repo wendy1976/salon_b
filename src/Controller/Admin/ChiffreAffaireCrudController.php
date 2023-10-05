@@ -1,5 +1,5 @@
 <?php
-
+# Controlleur crud pour afficher les chiffres d'affaires mensuels du salon
 namespace App\Controller\Admin;
 
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;

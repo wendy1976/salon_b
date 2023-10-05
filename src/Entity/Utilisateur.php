@@ -1,5 +1,5 @@
 <?php
-
+// Entité des utilisateurs
 namespace App\Entity;
 
 use App\Repository\UtilisateurRepository;

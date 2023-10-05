@@ -7,14 +7,12 @@ use App\Entity\ChiffreAffaire;
 use App\Entity\ChiffreAffaireRegion;
 use App\Entity\ChiffreAffaireDepartement;
 use App\Entity\Salon;
-
-
 use EasyCorp\Bundle\EasyAdminBundle\Config\Dashboard;
 use EasyCorp\Bundle\EasyAdminBundle\Config\MenuItem;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-//Création de l'interface du tableau de bord
+//Création de l'interface du tableau de bord pour le service administration
 class DashboardController extends AbstractDashboardController
 {
     #[Route('/admin', name: 'admin')]
@@ -42,10 +40,10 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->setTitle('Salon B - Administration')
+            ->setTitle('Salon Beautiful - Administration')
             ->renderContentMaximized();
     }
-
+    # Toutes les fonctions, liens, icones etc du tableau de bord
     public function configureMenuItems(): iterable
     {
         yield MenuItem::linkToDashboard('Accueil', 'fa fa-home');
@@ -54,7 +52,6 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::linkToCrud('Chiffres d\'affaires du salon', 'fa-solid fa-euro-sign', ChiffreAffaire::class);
         yield MenuItem::linkToCrud('Chiffres d\'affaires par région', 'fa-solid fa-euro-sign', ChiffreAffaireRegion::class);
         yield MenuItem::linkToCrud('Chiffres d\'affaires par département', 'fa-solid fa-euro-sign', ChiffreAffaireDepartement::class);
-        
         yield MenuItem::linkToUrl('Moyenne et Somme du CA du Salon Beautiful', 'fa fa-chart-bar', $this->generateUrl('chiffre_affaire_index'));
         yield MenuItem::linkToUrl('Moyenne et Somme du CA par région', 'fa fa-chart-bar', $this->generateUrl('chiffre_affaire_region_index'));
         yield MenuItem::linkToUrl('Moyenne et Somme du CA par département', 'fa fa-chart-bar', $this->generateUrl('chiffre_affaire_departement_index'));

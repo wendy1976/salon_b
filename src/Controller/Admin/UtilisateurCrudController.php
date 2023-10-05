@@ -1,5 +1,5 @@
 <?php
-
+# Controlleur crud pour afficher la liste des utilisateurs
 namespace App\Controller\Admin;
 
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;

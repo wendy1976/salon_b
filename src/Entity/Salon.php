@@ -1,5 +1,5 @@
 <?php
-
+// Entité profil du salon avec ses données
 namespace App\Entity;
 
 use App\Repository\SalonRepository;

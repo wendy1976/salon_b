@@ -1,7 +1,7 @@
 <?php
 
-// UtilisateurController.php
-// UtilisateurController.php
+
+// Controleur du formulaire d'inscription
 namespace App\Controller;
 
 use App\Entity\Utilisateur;
