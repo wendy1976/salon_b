@@ -101,3 +101,4 @@ public static function calculateAverageCAByDepartement(array $chiffresAffaires):
 
 
 }
+

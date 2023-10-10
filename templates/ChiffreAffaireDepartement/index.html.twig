@@ -21,8 +21,8 @@
         {% for departement, totalCA in totalCAByDepartement %}
             <tr>
                 <td>{{ departement }}</td>
-                <td>{{ totalCA|number_format(2, ',', ' ') }} €</td>
-                <td>{{ averageCAByDepartement[departement]|number_format(2, ',', ' ') }} €</td>
+                <td>{{ totalCA }}</td>
+                <td>{{ averageCAByDepartement[departement] }}</td>
             </tr>
         {% endfor %}
     </tbody>
