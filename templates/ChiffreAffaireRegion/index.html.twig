@@ -21,8 +21,8 @@
         {% for region, totalCA in totalCAByRegion %}
             <tr>
                 <td>{{ region }}</td>
-                <td>{{ totalCA }}</td>
-                <td>{{ averageCAByRegion[region] }}</td>
+                <td>{{ totalCA|number_format(2, ',', ' ') }} €</td>
+                <td>{{ averageCAByRegion[region]|number_format(2, ',', ' ') }} €</td>
             </tr>
         {% endfor %}
     </tbody>
