@@ -205,14 +205,14 @@ class ChiffreAffaire
 
     public function getMoyenne(): ?float
     {
-        $total = $this->janvier + $this->fevrier + $this->mars + $this->avril + $this->mai + $this->juin + $this->juillet + $this->aout;
-        $count = 8; // Nombre de mois à inclure dans le calcul de la moyenne
+        $total = $this->janvier + $this->fevrier + $this->mars + $this->avril + $this->mai + $this->juin + $this->juillet + $this->aout + $this->septembre;
+        $count = 9; // Nombre de mois à inclure dans le calcul de la moyenne
 
         return $count > 0 ? $total / $count : null;
     }
 
     public function getSomme(): ?int
     {
-        return $this->janvier + $this->fevrier + $this->mars + $this->avril + $this->mai + $this->juin + $this->juillet + $this->aout;
+        return $this->janvier + $this->fevrier + $this->mars + $this->avril + $this->mai + $this->juin + $this->juillet + $this->aout + $this->septembre;
     }
 }
